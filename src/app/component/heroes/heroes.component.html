@@ -1,0 +1,16 @@
+<div class="row animated fadeIn fast">
+    <div class="col-10">
+        <h1>Heroes <small>de Marvel y Dc</small></h1>
+    </div>
+    <div class="col-2">
+        <a [routerLink]="[ '/home']" class="btn btn-outline-danger btn-block">Regresar</a>
+        <!-- <a href="#/heroes" class="btn btn-outline-danger btn-block">Regresar</a> -->
+    </div>
+</div>
+<hr>
+
+<div class="card-columns">
+    
+    <app-heroes-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [idx]="i" *ngFor="let heroe of heroes, let i = index"></app-heroes-tarjeta>
+
+</div>
