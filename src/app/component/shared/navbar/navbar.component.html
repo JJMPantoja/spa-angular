@@ -41,11 +41,11 @@
 
     <form class="form-inline my-2 my-lg-0">
       <input
+        (keyup.enter)="buscarHeroe(buscar.value)"
         class="form-control mr-sm-2"
         type="search"
         placeholder="Buscar heroe"
         aria-label="Search"
-        (keyup.enter)="buscarHeroe(buscar.value)"
         #buscar
       />
       <button
